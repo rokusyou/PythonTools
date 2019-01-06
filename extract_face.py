@@ -9,7 +9,6 @@ def extract_face(in_img,out_img,resize):
     # SETTINGS
     print('Input image =' ,in_img)
     color = (255,255,255)
-
     cascade  = cv2.CascadeClassifier(".\\haarcascade_frontalface_default.xml")
 
     if os.path.exists(in_img):
