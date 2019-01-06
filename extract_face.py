@@ -22,7 +22,6 @@ def extract_face(in_img,out_img,resize):
 
         if len(face_list) >0: # when one or more face extracted
             rect = face_list[0] # 1st Element Only
-            x,y,width,height=rect
             image = image[rect[1]:rect[1]+rect[3],rect[0]:rect[0]+rect[2]] 
             if image.shape[0]> resize:
                 image = cv2.resize(image,(resize,resize))
