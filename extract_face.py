@@ -1,3 +1,6 @@
+# cv2を使って画像から顔を抽出し、サイズ変換して保存するメソッド
+# ディープラーニングで使うために作成しました。
+
 def extract_face(in_img,out_img,resize):
     # Import
     import os
